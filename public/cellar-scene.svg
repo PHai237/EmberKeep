@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 390" role="img" aria-label="Hầm ngục đá cổ, đuốc cháy và cánh cửa phát sáng">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#110f14"/><stop offset=".52" stop-color="#292330"/><stop offset="1" stop-color="#13151b"/></linearGradient>
+ <radialGradient id="fire"><stop stop-color="#ffd18a" stop-opacity=".95"/><stop offset=".2" stop-color="#c77834" stop-opacity=".45"/><stop offset="1" stop-color="#c77834" stop-opacity="0"/></radialGradient>
+ <radialGradient id="door"><stop stop-color="#bba779" stop-opacity=".8"/><stop offset=".4" stop-color="#668b83" stop-opacity=".36"/><stop offset="1" stop-color="#18444a" stop-opacity="0"/></radialGradient>
+ <linearGradient id="stone" x2="0" y2="1"><stop stop-color="#49414d"/><stop offset="1" stop-color="#1a1920"/></linearGradient>
+ <linearGradient id="floor" x2=".25" y2="1"><stop stop-color="#39323b"/><stop offset="1" stop-color="#0c0f13"/></linearGradient>
+ <linearGradient id="doorframe" x2="1" y2="0"><stop stop-color="#9d8562"/><stop offset=".6" stop-color="#363039"/><stop offset="1" stop-color="#131317"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".54" numOctaves="3" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer></filter>
+ <clipPath id="clip"><rect width="1280" height="390"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1280" height="390" fill="url(#bg)"/>
+<rect width="1280" height="390" fill="#292633" opacity=".25"/>
+<!-- stonework -->
+<g stroke="#776b72" stroke-width="1.7" opacity=".22" fill="none">
+<path d="M0 35H1280M0 82H1280M0 132H1280M0 194H1280M0 272H1280M0 341H1280"/>
+<path d="M120 0V82M338 0V82M544 0V82M760 0V82M998 0V82M1150 0V82M40 82V132M260 82V132M480 82V132M690 82V132M940 82V132M1195 82V132M150 132V194M390 132V194M630 132V194M870 132V194M1120 132V194"/>
+</g>
+<ellipse cx="690" cy="310" rx="410" ry="290" fill="url(#door)" opacity=".44"/>
+<!-- receding corridor -->
+<path d="M380 380 532 72H749L952 380Z" fill="#10171b" stroke="#403b43" stroke-width="18"/>
+<path d="M480 380 570 113H715L833 380Z" fill="#1d2626" stroke="#504549" stroke-width="13"/>
+<path d="M560 380 597 168H688L734 380Z" fill="#0b171b" stroke="#786954" stroke-width="10"/>
+<ellipse cx="641" cy="280" rx="153" ry="159" fill="url(#door)" opacity=".72"/>
+<path d="M610 370V208a30 30 0 0 1 60 0v162Z" fill="#acc3a5" opacity=".21"/>
+<path d="M629 357V223a11 11 0 0 1 22 0v134Z" fill="#d2ccb0" opacity=".22"/>
+<!-- gothic pillars -->
+<g fill="url(#stone)" stroke="#827073" stroke-width="3" opacity=".92">
+ <path d="M74 390V98Q74 12 184 0H253Q145 40 145 135V390Z"/>
+ <path d="M1136 390V122Q1136 38 1040 0H1118Q1230 31 1230 141V390Z"/>
+ <path d="M280 390V134Q280 57 337 15H383Q326 81 326 163V390Z"/>
+ <path d="M1000 390V138Q1000 65 941 17H898Q955 84 955 156V390Z"/>
+</g>
+<g fill="#c1ab88" opacity=".22"><path d="M73 120h72v10H73zM1138 118h92v10h-92zM280 154h46v9h-46zM954 154h46v9h-46z"/></g>
+<!-- stone floor -->
+<path d="M0 390 510 281 764 281 1280 390Z" fill="url(#floor)"/>
+<g stroke="#9b8472" opacity=".19" stroke-width="2" fill="none">
+<path d="M640 282 520 390M640 282 340 390M640 282 70 390M640 282 780 390M640 282 940 390M640 282 1220 390M480 315h324M320 357h660"/>
+</g>
+<!-- candle sconces and fire glow -->
+<ellipse cx="310" cy="174" rx="160" ry="154" fill="url(#fire)"/>
+<ellipse cx="965" cy="175" rx="145" ry="144" fill="url(#fire)"/>
+<g stroke="#b79b6a" stroke-width="6" stroke-linecap="round" fill="none"><path d="M309 182v45m-19-45h38M966 184v48m-17-48h35"/></g>
+<path d="M301 179q-7-17 4-36 6 15 8 5 15 23 5 31Z" fill="#d87531"/>
+<path d="M305 172q-2-15 4-22 9 15 2 22Z" fill="#ffdd99"/>
+<path d="M958 181q-10-23 6-40 11 18 8 11 14 22 3 29Z" fill="#d9752e"/>
+<path d="M962 174q-2-17 5-24 8 13 3 24Z" fill="#fff0ad"/>
+<!-- chest and a mysterious rune -->
+<g transform="translate(850 304)"><path d="M0 24 64 6l58 25-62 20Z" fill="#2e231e" stroke="#b18b5c" stroke-width="4"/><path d="M0 24v36l60 28V51ZM60 51l62-20v35L60 88Z" fill="#402b28" stroke="#9b734b" stroke-width="4"/><path d="M51 47h18v15H51z" fill="#d1b36c"/></g>
+<g opacity=".25" stroke="#aeceb9" stroke-width="2" fill="none" transform="translate(639 230)"><circle r="39"/><path d="M0-30 22 15-22 15ZM-28 0H28M0-39V39"/></g>
+<rect width="1280" height="390" fill="#ead49b" filter="url(#grain)" opacity=".55"/>
+<rect width="1280" height="390" fill="none" stroke="#151114" stroke-width="33" opacity=".65"/>
+</g></svg>
