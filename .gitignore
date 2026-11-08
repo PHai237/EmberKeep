@@ -1,0 +1,27 @@
+# Dependencies, output, caches
+node_modules/
+dist/
+coverage/
+.vite/
+supabase/.temp/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+
+# Generated config & local secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# OS/editor temporary data
+.DS_Store
+Thumbs.db
+.vscode/*.log
+
+# Local exports and backups (never commit save data)
+backups/
+local-saves/
+*.save.json
+vite.config.js
+vite.config.d.ts
